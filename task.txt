@@ -1,0 +1,48 @@
+###Scenario###
+You have been hired as a software engineer by an e-commerce company to create an AI-based web app that performs analytics on customer feedback for their signature products. To accomplish this requirement, you will create an Emotion Detection system that processes feedback provided by the customer in text format and deciphers the associated emotion expressed.
+
+###Introduction###
+Emotion detection extends the concept of sentiment analysis by extracting the finer emotions, like joy, sadness, anger, and so on, from statements rather than the simple polarity that sentiment analysis provides. This makes emotion detection a very important branch of study and businesses use such systems widely for their AI based recommendation systems, automated chat bots, and so on.
+
+###Project guidelines###
+
+Tasks and objectives:
+Task 1: Clone the project repository
+    To perform this task I installed git from the official website, and using the git bash terminal I cloned the repository corresponding to the given url using the command:
+        $ git clone https://github.com/ibm-developer-skills-network/oaqjp-final-project-emb-ai.git
+
+
+Task 2: Create an emotion detection application using Watson NLP library
+    Okay, since we are using IBM Watson NLP library, IBM has provided us with an url to access Watson.
+        URL: 'https://sn-watson-sentiment-bert.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/SentimentPredict'
+        Headers: {"grpc-metadata-mm-model-id": "sentiment_aggregated-bert-workflow_lang_multi_stock"}
+        Input json: { "raw_document": { "text": text_to_analyse } }
+    Using the instructed format above, we will send a POST request to Watson and get a sentiment analysis of the text sent as json object.
+
+Task 3: Format the output of the application
+    The response of the request is in the form of a text, therefore we will convert it to a json object. we will use the json library and it's json.loads() method for this.
+
+
+Task 4: Package the application
+    Packaging the application involved making a directory with the package name and moving the module in it. Also, initializing the package using the __init__.py file.
+
+
+Task 5: Run Unit tests on your application
+    This step consists of making a test file with appropriate name and importing the unittest module and using its methods for the unittesting.
+
+
+Task 6: Deploy as web application using Flask
+    Making a server.py file having all the important libraries in it like Flask, render_template, request, initializing application and making routes Incorporate HTML files provided.
+
+
+Task 7: Incorporate Error handling
+    Using the terminal to perform some test cases and adjusting code to handle errors.
+
+
+Task 8: Run static code analysis
+    using the pylint library to check for the PEP8 guidelines.
+Let's get started!
+
+repository_url = https://github.com/ibm-developer-skills-network/oaqjp-final-project-emb-ai.git
+
+This project is part of a course specialization offered by IBM on Coursera.
